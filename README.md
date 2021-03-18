@@ -10,7 +10,7 @@ FragmentExample_start - Starter Code
 <br />
 Task 1
 <br />
-<img src="task1/frondend.png" width="250" height="400">
+<img src="task1/frontend.png" width="250" height="400">
 <br />
 <b>Yes option pressed</b>
 <br />
