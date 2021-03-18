@@ -18,6 +18,8 @@ Task 1
 <br />
 <b>No option pressed</b>
 <br />
-Replying
-<br />
 <img src="task1/no.png" width="250" height="400">
+<b>Coding Challenge</b>
+<br />
+<img src="codingchallenge/rating.png" width="250" height="400">
+
