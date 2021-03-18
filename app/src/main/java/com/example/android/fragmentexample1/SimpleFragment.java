@@ -33,7 +33,6 @@ public class SimpleFragment extends Fragment {
         // setup of root view (layout) and radio group
         final View rootView = inflater.inflate(R.layout.fragment_simple, container, false);
         final RadioGroup group = rootView.findViewById(R.id.radio_group);
-        final RatingBar ratingBar = rootView.findViewById(R.id.ratingBar);
 
         // check change listener for radio group
         group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -54,15 +53,11 @@ public class SimpleFragment extends Fragment {
             }
         });
 
-        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-            @Override
-            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                String myRating = (getString(R.string.my_rating) + ratingBar.getRating());
-                Toast.makeText(getContext(), myRating, Toast.LENGTH_SHORT).show();
-            }
-        });
-
         return rootView;
+    }
+
+    public static SimpleFragment newInstance(){
+        return new SimpleFragment();
     }
 
 }
